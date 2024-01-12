@@ -1,0 +1,146 @@
+.header-cima {
+  background-color: var(--corPrincipalVerde);
+  height: 46px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-cima__esquerda {
+  display: flex;
+  gap: 10px;
+  color: var(--corBranco);
+  font-size: 15px;
+  font-family: var(--fontLondrina);
+  font-weight: 300;
+}
+
+.header-cima__redes {
+  display: flex;
+  gap: 28px;
+}
+
+.header {
+  height: 133px;
+  background-color: var(--corBranco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.header__nav a {
+  text-decoration: none;
+}
+
+#home {
+  color: var(--corAzul);
+}
+
+.header__nav li {
+  font-size: 18px;
+  color: var(--corMarrom);
+  font-family: var(--fontLondrina);
+  font-weight: 400;
+  transition: color 0.12s ease-in-out;
+}
+
+.header__nav li:hover {
+  color: var(--corAzul);
+}
+
+.menu {
+  display: none;
+  width: 25px;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--corPrincipalVerde);
+  padding: 15px;
+  width: 90%;
+  height: 100%;
+}
+
+.logo-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fechar {
+  width: 22px;
+  height: 22px;
+}
+.nav-mobile {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-mobile p {
+  font-family: var(--fontLondrina);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--corBranco);
+}
+
+.nav-mobile a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */
+  .header-cima__esquerda {
+    font-size: 13px;
+  }
+  .header-cima__redes {
+    gap: 10px;
+  }
+  .header-cima__esquerda img {
+    width: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  .logo {
+    width: 70%;
+  }
+}
+@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .logo {
+    width: 70%;
+  }
+  .header-cima__redes {
+    gap: 10px;
+  }
+  .header-cima__esquerda {
+    font-size: 14px;
+  }
+}
+@media (max-width:1025px) {
+  .header__nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+

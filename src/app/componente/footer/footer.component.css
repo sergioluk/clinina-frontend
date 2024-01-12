@@ -1,0 +1,37 @@
+.footer {
+  height: 111px;
+  width: 100%;
+  padding: auto 0;
+}
+
+.footer-cima {
+  height: 55px;
+}
+.footer-baixo {
+  height: 55px;
+  font-family: var(--fontLondrina);
+  font-size: 16px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-baixo__redes {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.corVerde {
+  border-color: var(--corAzul);
+}
+
+@media (max-width:641px)  {
+  .footer-baixo {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

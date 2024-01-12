@@ -1,0 +1,53 @@
+<div class="header-cima margin">
+  <div class="header-cima__esquerda">
+    <img src="../../../assets/img/esteto_icon.svg" alt="icone de um estetoscopio">
+    <p>Pet Store e Clínica Veterinária</p>
+    <img src="../../../assets/img/pote_racao_icon.svg" alt="icone de ração">
+  </div>
+  <div class="header-cima__redes">
+    <a href="https://www.facebook.com/profile.php?id=61554621069725" target="_blank">
+      <img src="../../../assets/img/facebook_icon.svg" alt="icone do facebook">
+    </a>
+    <a href="https://www.instagram.com/clininavet/" target="_blank">
+      <img src="../../../assets/img/instagram_icon.svg" alt="icone do instagram">
+    </a>
+    <a href="#" target="_blank">
+      <img src="../../../assets/img/tiktok_icon.svg" alt="icone do tiktok">
+    </a>
+  </div>
+</div>
+<header class="header margin">
+  <a routerLink="/home">
+    <img class="logo" src="../../../assets/img/clinina_logo.png" alt="logo da clinina">
+  </a>
+  <nav>
+    <ul class="header__nav">
+      <a routerLink="/home"><li id="home">HOME</li></a>
+      <a routerLink="/sobre"><li>SOBRE</li></a>
+      <a routerLink="/servicos"><li>SERVIÇOS</li></a>
+      <a routerLink="/equipe"><li>EQUIPE</li></a>
+      <a routerLink="/contato"><li>CONTATO</li></a>
+    </ul>
+    <img class="menu" src="../../../assets/img/menu_icon.png" alt="Icone de menu" (click)="abrirMenu()">
+  </nav>
+
+  <div class="modal" *ngIf="menu">
+    <div class="modal-content">
+      <div class="logo-mobile">
+        <img src="../../../assets/img/logo_mobile.png" alt="Logo Clinina">
+        <img class="fechar" src="../../../assets/img/Botao_Fechar.png" alt="Botão de Fechar" (click)="abrirMenu()">
+      </div>
+      <div class="nav-mobile">
+        <a routerLink="/home" (click)="abrirMenu()"><p>HOME</p></a>
+        <a routerLink="/sobre" (click)="abrirMenu()"><p>SOBRE</p></a>
+        <a routerLink="/servicos" (click)="abrirMenu()"><p>SERVIÇOS</p></a>
+        <a routerLink="/equipe" (click)="abrirMenu()"><p>EQUIPE</p></a>
+        <a routerLink="/contato" (click)="abrirMenu()"><p>CONTATO</p></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+

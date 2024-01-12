@@ -1,0 +1,78 @@
+.servicos {
+  height: 250px;
+  background-image: url("../../../../assets/img/faixa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.servicos h2 {
+  font-family: var(--fontAdigiana);
+  font-size: 64px;
+  color: var(--corBranco);
+}
+
+.servicos-titulo {
+  margin: 80px 0;
+}
+
+.servicos-titulo h2 {
+  font-family: var(--fontAdigiana);
+  font-size: 46px;
+  color: var(--corMarrom);
+  text-align: center;
+}
+
+.servicos-titulo p {
+  font-family: var(--fontLondrina);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--corPreto);
+  text-align: center;
+  margin-top: 37px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.container img {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card h3 {
+  font-family: var(--fontLondrina);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--corPrincipalVerde);
+}
+
+.card p {
+  font-family: var(--fontLondrina);
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--corPreto);
+  text-align: center;
+}
+
+@media (max-width:481px)  {
+  .servicos-titulo h2 {
+    font-size: 30px;
+  }
+}

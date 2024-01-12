@@ -1,1 +1,109 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
+
+@font-face {
+  font-family: 'Adigiana-Toybox-Regular';
+  src:url('../src/assets/font/Adigiana-Toybox-Regular.ttf.woff') format('woff'),
+      url('../src/assets/font/Adigiana-Toybox-Regular.ttf.svg#Adigiana-Toybox-Regular') format('svg'),
+      url('../src/assets/font/Adigiana-Toybox-Regular.ttf.eot'),
+      url('../src/assets/font/Adigiana-Toybox-Regular.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*background-color: #fad59e;*/
+}
+
+:root {
+  --corPrincipalVerde: #23BEB6;
+  --corAmarelo: #E9D758;
+  --corRoxo: #B396AF;
+  --corMarrom: #6F5E5C;
+  --corAzul: #99E1D9;
+  --corBranco: #fff;
+  --corPreto: #4B5565;
+  --corHoverBotao: #5ceccd;
+  --fontLondrina: 'Londrina Solid', sans-serif;
+  --fontAdigiana: 'Adigiana-Toybox-Regular', sans-serif;
+}
+
+.margin {
+  padding: 0 200px;
+}
+
+.botao {
+  height: 66px;
+  width: fit-content;
+  padding: 0 40px;
+  font-family: var(--fontLondrina);
+  font-weight: 400;
+  font-size: 20px;
+  background-color: var(--corPrincipalVerde);
+  color: var(--corBranco);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.32s ease-in-out;
+}
+
+.botao:hover {
+  background-color: var(--corHoverBotao);
+}
+
+body {
+  border: 1px solid black;
+  min-width: 320px;
+}
+
+@media (min-width:320px)  {
+  .margin {
+    padding: 0 10px;
+  }
+}
+@media (max-width:320px)  {
+  .margin {
+    padding: 0 10px;
+  }
+}
+@media (min-width:481px)  {
+  .margin {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width:1025px) {
+
+  .margin {
+    padding: 0 50px;
+  }
+
+}
+@media (min-width:1281px) {
+
+  .margin {
+    padding: 0 70px;
+  }
+
+}
+
+@media (min-width:1440px) {
+
+  .margin {
+    padding: 0 100px;
+  }
+
+}
+
+@media (min-width:1660px) {
+
+  .margin {
+    padding: 0 200px;
+  }
+
+}

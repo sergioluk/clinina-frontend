@@ -1,0 +1,151 @@
+.sobre {
+  height: 250px;
+  background-image: url("../../../../assets/img/faixa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.sobre h2 {
+  font-family: var(--fontAdigiana);
+  font-size: 64px;
+  color: var(--corBranco);
+}
+
+.clinina-sobre {
+  margin: 60px 0;
+}
+
+.clinina-sobre h2{
+  font-family: var(--fontAdigiana);
+  font-size: 62px;
+  color: var(--corMarrom);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.clinina-sobre p{
+  font-family: var(--fontLondrina);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--corPreto);
+  text-align: center;
+}
+
+.imagens-nina {
+  background-color: var(--corAzul);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imagens-nina img {
+  border-radius: 72px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 70px 0;
+}
+
+.container img {
+  width: 95%;
+}
+
+.container__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.container__cards img {
+  width: 50%;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  padding: 45px 28px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.marrom {
+  background-color: var(--corMarrom);
+}
+
+.roxo {
+  background-color: var(--corRoxo);
+}
+
+.amarelo {
+  background-color: var(--corAmarelo);
+}
+
+.verde {
+  background-color: var(--corPrincipalVerde);
+}
+
+.card h3 {
+  font-family: var(--fontLondrina);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--corBranco);
+}
+
+.card p {
+  font-family: var(--fontLondrina);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--corBranco);
+}
+
+@media (max-width:1234px) {
+  .imagens-nina {
+    justify-content: space-around;
+  }
+
+}
+@media (max-width:640px) {
+  .container__cards {
+    width: fit-content;
+    padding: 10px 0;
+  }
+}
+@media (min-width:641px) and (max-width:1025px) {
+  .container__cards {
+    width: 70%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width:1025px) {
+  .container {
+    flex-direction: column;
+  }
+  .container__cards img {
+    width: 50px;
+  }
+  .container__cards p {
+    font-size: 15px;
+  }
+  .container__cards h3 {
+    font-size: 20px;
+  }
+}

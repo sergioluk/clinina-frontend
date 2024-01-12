@@ -1,0 +1,129 @@
+.contato {
+  height: 250px;
+  background-image: url("../../../../assets/img/faixa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.contato h2 {
+  font-family: var(--fontAdigiana);
+  font-size: 64px;
+  color: var(--corBranco);
+}
+
+.container-contato {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0;
+  gap: 45px;
+}
+
+.contato__content {
+  width: 45%;
+}
+
+.contato__content h2 {
+  font-family: var(--fontLondrina);
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--corMarrom);
+  margin-bottom: 40px;
+}
+
+.contato__content p {
+  font-family: var(--fontLondrina);
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--corPreto);
+}
+
+.separar {
+  margin-bottom: 80px;
+}
+
+.endereco {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.endereco2 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.endereco img {
+  translate: 0px -4px;
+}
+
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 45%;
+}
+
+.input {
+  color: var(--corPreto);
+  width: 100%;
+  height: 68px;
+  padding: 20px;
+  font-family: var(--fontLondrina);
+  font-weight: 300;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--corAzul);
+}
+
+.textarea {
+  color: var(--corPreto);
+  width: 100%;
+  padding: 20px;
+  font-family: var(--fontLondrina);
+  font-weight: 300;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--corAzul);
+  resize: none;
+}
+
+.input::placeholder, .textarea::placeholder {
+  color: #D2D6DD;
+}
+
+.textarea:focus, .input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+@media (max-width:961px)  {
+  .container-contato {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .contato__content {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .endereco {
+    justify-self: center;
+    text-align: center;
+  }
+  .input,
+  .textarea {
+    width: 90%;
+  }
+  .contato__formulario {
+    width: 100%;
+  }
+}

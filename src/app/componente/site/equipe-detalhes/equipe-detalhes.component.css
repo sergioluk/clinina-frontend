@@ -1,0 +1,73 @@
+.equipe {
+  height: 250px;
+  background-image: url("../../../../assets/img/faixa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+
+.equipe h2 {
+  font-family: var(--fontAdigiana);
+  font-size: 64px;
+  color: var(--corBranco);
+}
+
+.container-titulo {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.container-titulo h2 {
+  font-family: var(--fontLondrina);
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--corMarrom);
+}
+
+.container-titulo p {
+  font-family: var(--fontLondrina);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--corPreto);
+}
+
+.fotos-equipe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.fotos-equipe__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.fotos-equipe__card img {
+  width: 100%;
+}
+
+.fotos-equipe__card h4 {
+  font-family: var(--fontLondrina);
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--corPreto);
+}
+
+@media (max-width:641px)  {
+  .container-titulo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .fotos-equipe {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
